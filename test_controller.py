@@ -1,4 +1,4 @@
-from kesslergame import KesslerController # In Eclipse, the name of the library is kesslergame, not src.kesslergame
+from kesslergame import KesslerController
 from typing import Dict, Tuple
 import skfuzzy as fuzz
 class TestController(KesslerController):

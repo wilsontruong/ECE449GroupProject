@@ -98,6 +98,15 @@ class group_controller(KesslerController):
         fire['yes'] = fuzz.trimf(fire.universe, [0,0,1])
         fire['no'] = fuzz.trimf(fire.universe, [0,1,1])
 
+        # Rules
+        # Try to avoid and shoot asteroid to survive
+        # When enemy ship health is lower than player ship health, thrust towards enemy ship and collide with it
+        # If enemy ship health is higher or equal with player ship health, thrust away from enemy ship
+
+        rule1 = ctrl.Rule()
+
+        self.ship_control = ctrl.ControlSystem()
+
 
 
 
